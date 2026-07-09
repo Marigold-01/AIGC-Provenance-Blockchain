@@ -1,0 +1,26 @@
+{
+  "similarity_threshold": 0.70,
+  "auto_threshold": {
+    "enabled": true,
+    "start": 0.30,
+    "end": 0.90,
+    "step": 0.01
+  },
+  "weights": {
+    "sha256": 0.05,
+    "phash": 0.22,
+    "dhash": 0.18,
+    "histogram": 0.15,
+    "orb": 0.40
+  },
+  "evaluation_thresholds": {
+    "sha256_score": 1.00,
+    "phash_score": 0.80,
+    "dhash_score": 0.80,
+    "histogram_score": 0.90,
+    "orb_score": 0.55,
+    "fusion_score": 0.70
+  },
+  "supported_ext": [".png", ".jpg", ".jpeg", ".webp", ".bmp"],
+  "project_name": "AIGC新闻图片区块链可信溯源与内容演化治理原型系统"
+}

@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "V001",
+      "file_name": "01_original.jpg",
+      "label": "原创存证",
+      "similarity": 0.0,
+      "content_origin": "真实新闻原图",
+      "edit_type": "原始内容"
+    },
+    {
+      "id": "V002",
+      "file_name": "02_compressed.jpg",
+      "label": "轻度编辑传播",
+      "similarity": 0.947369,
+      "content_origin": "传统编辑衍生",
+      "edit_type": "图片压缩"
+    },
+    {
+      "id": "V003",
+      "file_name": "03_add_caption.jpg",
+      "label": "轻度编辑传播",
+      "similarity": 0.857686,
+      "content_origin": "传统编辑衍生",
+      "edit_type": "文字叠加"
+    },
+    {
+      "id": "V004",
+      "file_name": "04_cropped.jpg",
+      "label": "轻度编辑传播",
+      "similarity": 0.798823,
+      "content_origin": "传统编辑衍生",
+      "edit_type": "区域裁剪"
+    },
+    {
+      "id": "V005",
+      "file_name": "05_aigc_edited.jpg",
+      "label": "疑似二次创作",
+      "similarity": 0.743418,
+      "content_origin": "AIGC二次编辑",
+      "edit_type": "生成式内容增加"
+    },
+    {
+      "id": "V006",
+      "file_name": "06_brightness.jpg",
+      "label": "轻度编辑传播",
+      "similarity": 0.887275,
+      "content_origin": "传统编辑衍生",
+      "edit_type": "亮度调整"
+    },
+    {
+      "id": "V007",
+      "file_name": "07_blur.jpg",
+      "label": "轻度编辑传播",
+      "similarity": 0.925189,
+      "content_origin": "传统编辑衍生",
+      "edit_type": "模糊处理"
+    },
+    {
+      "id": "V008",
+      "file_name": "08_different.jpg",
+      "label": "原创存证",
+      "similarity": 0.575964,
+      "content_origin": "非同源新闻图片",
+      "edit_type": "非同源对照图片"
+    }
+  ],
+  "edges": [
+    {
+      "source": "V001",
+      "target": "V002",
+      "similarity": 0.947369,
+      "relation": "轻度编辑传播"
+    },
+    {
+      "source": "V001",
+      "target": "V003",
+      "similarity": 0.857686,
+      "relation": "轻度编辑传播"
+    },
+    {
+      "source": "V001",
+      "target": "V004",
+      "similarity": 0.798823,
+      "relation": "轻度编辑传播"
+    },
+    {
+      "source": "V004",
+      "target": "V005",
+      "similarity": 0.743418,
+      "relation": "疑似二次创作"
+    },
+    {
+      "source": "V001",
+      "target": "V006",
+      "similarity": 0.887275,
+      "relation": "轻度编辑传播"
+    },
+    {
+      "source": "V002",
+      "target": "V007",
+      "similarity": 0.925189,
+      "relation": "轻度编辑传播"
+    }
+  ]
+}

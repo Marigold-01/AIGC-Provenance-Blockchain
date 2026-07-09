@@ -1,0 +1,53 @@
+{
+  "description": "8张实验图片的真实标签。文件名必须与 data/news_images 中的实际文件名完全一致。",
+  "samples": {
+    "01_original.jpg": {
+      "source_group": "G001",
+      "expected_same_source": false,
+      "expected_parent_file": null,
+      "role": "original"
+    },
+    "02_compressed.jpg": {
+      "source_group": "G001",
+      "expected_same_source": true,
+      "expected_parent_file": "01_original.jpg",
+      "role": "compressed"
+    },
+    "03_add_caption.jpg": {
+      "source_group": "G001",
+      "expected_same_source": true,
+      "expected_parent_file": "01_original.jpg",
+      "role": "caption"
+    },
+    "04_cropped.jpg": {
+      "source_group": "G001",
+      "expected_same_source": true,
+      "expected_parent_file": "01_original.jpg",
+      "role": "cropped"
+    },
+    "05_aigc_edited.jpg": {
+      "source_group": "G001",
+      "expected_same_source": true,
+      "expected_parent_file": "01_original.jpg",
+      "role": "aigc_edited"
+    },
+    "06_brightness.jpg": {
+      "source_group": "G001",
+      "expected_same_source": true,
+      "expected_parent_file": "01_original.jpg",
+      "role": "brightness"
+    },
+    "07_blur.jpg": {
+      "source_group": "G001",
+      "expected_same_source": true,
+      "expected_parent_file": "01_original.jpg",
+      "role": "blur"
+    },
+    "08_different.jpg": {
+      "source_group": "G002",
+      "expected_same_source": false,
+      "expected_parent_file": null,
+      "role": "negative"
+    }
+  }
+}

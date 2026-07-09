@@ -1,0 +1,9 @@
+﻿file_name,expected_same_source,predicted_same_source,expected_parent_file,predicted_parent_file,parent_correct,best_similarity,phash_similarity,dhash_similarity,histogram_similarity,orb_similarity,governance_label
+01_original.jpg,False,False,,,True,0.0,0.0,0.0,0.0,0.0,原创存证
+02_compressed.jpg,True,True,01_original.jpg,01_original.jpg,True,0.947369,1.0,1.0,0.999917,0.993453,轻度编辑传播
+03_add_caption.jpg,True,True,01_original.jpg,01_original.jpg,True,0.857686,0.75,0.890625,0.916756,0.987151,轻度编辑传播
+04_cropped.jpg,True,True,01_original.jpg,01_original.jpg,True,0.798823,0.65625,0.671875,0.964025,0.972268,轻度编辑传播
+05_aigc_edited.jpg,True,True,01_original.jpg,04_cropped.jpg,False,0.743418,0.5625,0.71875,0.901249,0.887763,疑似二次创作
+06_brightness.jpg,True,True,01_original.jpg,01_original.jpg,True,0.887275,0.96875,1.0,0.662464,0.98695,轻度编辑传播
+07_blur.jpg,True,True,01_original.jpg,02_compressed.jpg,False,0.925189,1.0,0.984375,0.997638,0.945889,轻度编辑传播
+08_different.jpg,False,False,,,True,0.575964,0.4375,0.609375,0.707282,0.659836,原创存证

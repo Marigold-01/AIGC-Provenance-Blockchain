@@ -1,0 +1,33 @@
+{
+  "project_name": "AIGC新闻图片区块链可信溯源与内容演化治理原型系统",
+  "input_dir": "D:\\区块链基础期末大作业\\aigc_news_trace_chain\\data\\news_images",
+  "output_dir": "D:\\区块链基础期末大作业\\aigc_news_trace_chain\\results",
+  "metadata_file": "D:\\区块链基础期末大作业\\aigc_news_trace_chain\\data\\image_metadata.json",
+  "ground_truth_file": "D:\\区块链基础期末大作业\\aigc_news_trace_chain\\data\\ground_truth.json",
+  "configured_threshold": 0.7,
+  "selected_threshold": 0.66,
+  "threshold_source": "ground_truth 自动寻优",
+  "auto_threshold_enabled": true,
+  "weights": {
+    "sha256": 0.05,
+    "phash": 0.22,
+    "dhash": 0.18,
+    "histogram": 0.15,
+    "orb": 0.4
+  },
+  "image_count": 8,
+  "metadata_match_count": 8,
+  "block_count": 9,
+  "chain_valid": true,
+  "generated_files": [
+    "trace_records.json",
+    "blockchain_records.json",
+    "version_graph.json",
+    "version_graph.png",
+    "experiment_result.csv",
+    "similarity_matrix.csv",
+    "summary.json",
+    "threshold_optimization.json",
+    "threshold_optimization_curve.csv"
+  ]
+}

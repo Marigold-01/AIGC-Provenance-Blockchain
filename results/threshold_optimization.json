@@ -1,0 +1,26 @@
+{
+  "threshold": 0.66,
+  "sample_count": 8,
+  "tp": 6,
+  "tn": 2,
+  "fp": 0,
+  "fn": 0,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "specificity": 1.0,
+  "balanced_accuracy": 1.0,
+  "f1": 1.0,
+  "best_threshold_interval": [
+    0.58,
+    0.74
+  ],
+  "positive_min_score": 0.743418,
+  "negative_max_score": 0.575964,
+  "separation_margin": 0.167454,
+  "selection_rule": "最大F1 → 最大平衡准确率 → 最大Accuracy；并取并列最佳阈值区间中点",
+  "missing_result_files": [],
+  "ground_truth_file": "D:\\区块链基础期末大作业\\aigc_news_trace_chain\\data\\ground_truth.json",
+  "configured_threshold": 0.7,
+  "note": "课程实验中使用当前标注集自动选阈值；正式研究建议另设独立验证集。"
+}

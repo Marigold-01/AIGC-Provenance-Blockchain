@@ -1,0 +1,92 @@
+{
+  "images": {
+    "01_original.jpg": {
+      "declared_aigc": false,
+      "content_origin": "真实新闻原图",
+      "generation_model": "",
+      "generation_prompt": "",
+      "edit_type": "原始内容",
+      "source_name": "中国新闻网",
+      "source_platform": "中国新闻网",
+      "declared_parent_file": null,
+      "metadata_notes": "原始新闻图片，作为版本传播链起点。"
+    },
+    "02_compressed.jpg": {
+      "declared_aigc": false,
+      "content_origin": "传统编辑衍生",
+      "generation_model": "",
+      "generation_prompt": "",
+      "edit_type": "图片压缩",
+      "source_name": "实验数据集",
+      "source_platform": "本地处理",
+      "declared_parent_file": "01_original.jpg",
+      "metadata_notes": "由原始新闻图片降低 JPEG 质量后得到。"
+    },
+    "03_add_caption.jpg": {
+      "declared_aigc": false,
+      "content_origin": "传统编辑衍生",
+      "generation_model": "",
+      "generation_prompt": "",
+      "edit_type": "文字叠加",
+      "source_name": "实验数据集",
+      "source_platform": "本地处理",
+      "declared_parent_file": "01_original.jpg",
+      "metadata_notes": "在原始新闻图片上添加新闻标题或说明文字。"
+    },
+    "04_cropped.jpg": {
+      "declared_aigc": false,
+      "content_origin": "传统编辑衍生",
+      "generation_model": "",
+      "generation_prompt": "",
+      "edit_type": "区域裁剪",
+      "source_name": "实验数据集",
+      "source_platform": "本地处理",
+      "declared_parent_file": "01_original.jpg",
+      "metadata_notes": "对原始新闻图片进行区域裁剪，保留主要内容主体。"
+    },
+    "05_aigc_edited.jpg": {
+      "declared_aigc": true,
+      "content_origin": "AIGC二次编辑",
+      "generation_model": "ChatGPT Image",
+      "generation_prompt": "在保持大熊猫主体、竹子和原有构图基本不变的前提下，在画面左侧和背景区域增加粉色花朵与绿色植物元素。",
+      "edit_type": "生成式内容增加",
+      "source_name": "实验数据集",
+      "source_platform": "ChatGPT",
+      "declared_parent_file": "01_original.jpg",
+      "metadata_notes": "使用 AIGC 工具增加背景花朵和绿植，其余主要内容保持一致。"
+    },
+    "06_brightness.jpg": {
+      "declared_aigc": false,
+      "content_origin": "传统编辑衍生",
+      "generation_model": "",
+      "generation_prompt": "",
+      "edit_type": "亮度调整",
+      "source_name": "实验数据集",
+      "source_platform": "本地处理",
+      "declared_parent_file": "01_original.jpg",
+      "metadata_notes": "调整原始新闻图片整体亮度，用于模拟平台转码或后期调色。"
+    },
+    "07_blur.jpg": {
+      "declared_aigc": false,
+      "content_origin": "传统编辑衍生",
+      "generation_model": "",
+      "generation_prompt": "",
+      "edit_type": "模糊处理",
+      "source_name": "实验数据集",
+      "source_platform": "本地处理",
+      "declared_parent_file": "01_original.jpg",
+      "metadata_notes": "对原始新闻图片进行轻度模糊，用于模拟低清传播。"
+    },
+    "08_different.jpg": {
+      "declared_aigc": false,
+      "content_origin": "非同源新闻图片",
+      "generation_model": "",
+      "generation_prompt": "",
+      "edit_type": "非同源对照图片",
+      "source_name": "实验数据集",
+      "source_platform": "公开新闻图片",
+      "declared_parent_file": null,
+      "metadata_notes": "与大熊猫新闻图片内容无关的负样本，用于检验误识别情况。"
+    }
+  }
+}
